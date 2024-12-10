@@ -193,7 +193,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<p>Do teams in the playoff contention deserve to be considered over other teams? Does a team like South Carolina deserve to be in the playoffs over Indiana. Looking at their performance and teams they played.&nbsp;</p>
+<p>Do teams in the playoff contention deserve to be considered over other teams? Does a team like South Carolina deserve to be in the playoffs over Indiana.</p>
+<p>Does one team belong over the other looking into their performance and the quality of teams they played.&nbsp;</p>
+<p>The playoffs are expanded to 12 teams for the first time this season. At the same time there has been a lot of consolidation among the conferences and now the have the power 4 conferences, each consisting of many teams. This leads to many unbalanced schedules and difficulty to judge teams based off their records.</p>
+<p>This raises a question about the quality of teams wins and who really is better then everyone else.</p>
+<p>Question: Is there large difference between the defenses South Carolina faced being in the SEC and defenses Indiana faced being in the Big Ten, plus their non conference games?</p>
 <div class="cell" data-messasge="false">
 <details class="code-fold">
 <summary>Code</summary>
@@ -215,7 +219,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="fu">labs</span>(</span>
 <span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">x=</span><span class="st">"Games Played"</span>, </span>
 <span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    <span class="at">y=</span><span class="st">"Average Yards Given Up By Defense"</span>, </span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    <span class="at">title=</span><span class="st">"Quality of the defenses on each team's schedules"</span>, </span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    <span class="at">title=</span><span class="st">"Comparsion of average yards given up by each teams opponent"</span>, </span>
 <span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle=</span><span class="st">"Bigger spread in the defensive yards per game bewtween the Big Ten and SEC"</span>, </span>
 <span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>    <span class="at">caption=</span><span class="st">"Source: NCAA Stats | By Annie Worley"</span>) <span class="sc">+</span></span>
 <span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
@@ -233,6 +237,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
+<p>Both teams faced some strong defenses. Indiana has a bigger spread between the best and worse defenses they faced based on the average yards they gave up.</p>
+<p>South Carolina’s graph shows there is a consistent group of teams who had stronger defenses than the teams Indiana faced.</p>
+<p>3rd down conversions are an important aspect of the offensive side of the ball. Its critical to keep drives alive and help with added scoring chances.</p>
 <div class="cell" data-messasge="false">
 <details class="code-fold">
 <summary>Code</summary>
@@ -240,7 +247,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co">#| messasge: FALSE</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<p>Text</p>
+<p>Question: How do the opponents South Carolina and Indiana faced compare in terms of 3rd down conversions?</p>
 <div class="cell" data-messasge="false">
 <details class="code-fold">
 <summary>Code</summary>
@@ -258,8 +265,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="fu">labs</span>(</span>
 <span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">x=</span><span class="st">"Games Played"</span>, </span>
 <span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">y=</span><span class="st">"3rd down completion percentage"</span>, </span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">title=</span><span class="st">"Not yet"</span>, </span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle=</span><span class="st">"South Carolina in black and Indiana in Crimson"</span>, </span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">title=</span><span class="st">"South Carolina consistently faced better 3rd down offenses"</span>, </span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle=</span><span class="st">"South Carolina in black and Indiana in crimson"</span>, </span>
 <span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">caption=</span><span class="st">"Source: NCAA Stats | By Annie Worley"</span>) <span class="sc">+</span></span>
 <span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
 <span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">13</span>, <span class="at">face =</span> <span class="st">"bold"</span>, <span class="at">color =</span> <span class="st">"black"</span>), </span>
@@ -276,7 +283,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p>Text</p>
+<p>Between the strongest and weakest opponents South Carolina faced, those offenses were better on 3rd down conversions then who Indiana played. Overall, all the teams South Carolina played were more proficient on 3rd down plays.</p>
+<p>Question: Did South Carolina’s or Indiana’s oppenents have better offenses?</p>
 <div class="cell" data-messasge="false">
 <details class="code-fold">
 <summary>Code</summary>
@@ -292,8 +300,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="fu">labs</span>(</span>
 <span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">x=</span><span class="st">"Rushing Yards Per Game and Passing Yards Per Game "</span>, </span>
 <span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">y=</span><span class="st">"Teams Played"</span>, </span>
-<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">title=</span><span class="st">"Not yet"</span>, </span>
-<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle=</span><span class="st">"Dark Grey = Rushing YPG and Tan = Passing YPG"</span>,</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">title=</span><span class="st">"Opponents passsing and rushing yards per game"</span>, </span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle=</span><span class="st">"Dark Grey = Rushing YPG and Light Grey = Passing YPG"</span>,</span>
 <span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">caption=</span><span class="st">"Source: NCAA Stats | By Annie Worley"</span>) <span class="sc">+</span></span>
 <span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
 <span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">13</span>, <span class="at">face =</span> <span class="st">"bold"</span>, <span class="at">color =</span> <span class="st">"black"</span>), </span>
@@ -310,7 +318,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p>Text</p>
+<p>The opponents South Carolina faced averaged more rushing yards and passing yards combined then the opponents Indiana played.</p>
+<p>Both schools each faced one FCS division opponent and 11 FBS teams. Their divisional mix was similar. Indiana made it into the playoffs based on their better overall record. Indiana’s record was 10 - 1 and South Carolina’s was 9 - 3.</p>
+<p>Based on the quality of competition South Carolina faced you could argue they are a better team than Indiana, although their record isn’t as good. In general, both offenses and defenses South Carolina faced performed better then the opponents Indiana played.</p>
 <p>Comparison between total defense between the teams using a bar chart</p>
 <p>Dumbbell chart to show the passing and rushing offense between the teams</p>
 <p>Line chart to represent 3rd down conversion pct between the teams</p>
